@@ -2,6 +2,9 @@
     background-image: url(../images/poster-drone.jpg);
     margin-bottom: 3em;
 }
+h4 {
+    font-weight: 600;
+}
 .u-lMain {
     .Row__title {
         color: #641A2B;
@@ -30,13 +33,14 @@
 .row-text-center {
     text-align: center;
 }
+.section-intro {
+    text-align: left;
+    max-width: 40em;
+    margin: 0 auto 5%;
+}
 .row-no-max-width {
     .Row {
         max-width: none;
-    }
-    .section__intro {
-        max-width: 40rem;
-        margin: 0 auto;
     }
 }
 .row-map {
@@ -97,7 +101,72 @@
 .row-map.iframe-loaded .map-load-text-container {
     display: none;
 }
-
+.row-hudson-valley {
+    padding: 2em;
+    /* background-image: url(../images/River-Foliage-TT-03.jpg);
+    background-size: cover; */
+    .Row__title {
+        text-align: center;  
+    }
+    .largetab {
+        position: relative;
+        background-image: url("../images/pattern-spark-white.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-image: none;
+        background-color: #63666A; */
+        color: #fff;
+    }
+    details[open]:hover {
+        background-image: none;
+        background-color: #333;
+        border-color: transparent;
+    }
+    .section-intro {
+        /* background-color: rgba(255,255,255,0.75);
+        color: #444;
+        padding: 2em; */
+    }
+    a:link {
+        color: #fff;
+        text-decoration-color: #fff;
+        &:hover {
+            background-color: #ccc;
+            color: #000;
+        }
+    }
+    a:visited {
+        color: #a7a7a7;
+        text-decoration-color: #a7a7a7;
+        &:hover {
+            background-color: #ccc;
+            color: #000;
+        }
+    }
+    .full-col {
+        display: flex;
+        flex-direction: column
+    }
+}
+@media screen and (min-width: 50em) {
+    .row-hudson-valley {
+        .full-col {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .half-col {
+            width: 48%;
+        }
+        .one-third-col {
+            width: 32%;
+        }
+        .two-third-col {
+            width: 65%;
+        }
+    }
+}
 /* default summary details */
 details {
     border: 0;
@@ -168,26 +237,7 @@ summary {
 .largetab[open] > summary:before {
     transform: rotate(90deg);
 }
-/*.largetab:nth-child(1) {
-    color: #641A2B;
-    position: relative;
-    background-image: url("../images/pattern-spark-white.png");
-    background-size: 300%;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 10;
-    &:before {
-        position: absolute;
-        content: "";
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, #641A2B 0%, #ed1c24 70%);
-        z-index:1;
-    }
-}*/
-.largetab:nth-child(1) {
+.row-three-col .largetab:nth-child(1) {
     position: relative;
     background-image: url("../images/pattern-spark-white.png");
     background-size: cover;

@@ -64,3 +64,4 @@ config.rb
 
 assets/.DS_Store
 *.ico
+*.css
